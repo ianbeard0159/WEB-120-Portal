@@ -14,12 +14,22 @@ body{
 p{
     margin: 0px;
 }
+a, a:visited{
+    color: rgb(25, 151, 214);
+}
+a:hover{
+    color: rgb(88, 195, 248);
+    text-shadow: 0 0 5px rgb(88, 195, 248);
+}
+h2{
+    margin: 10px;
+}
 small{
     margin: 15px;
 }
 #top-bar{
     width: 100%;
-    padding: 1%;
+    padding: 5px;
     position: fixed;
     z-index: 1;
     top: 0px;
@@ -34,21 +44,56 @@ small{
     border-bottom-style: solid;
     border-bottom-width: 2px;
 }
-#tMenu{
+#top-menu{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     flex: 1 1 auto;
     cursor: pointer;
+    text-align: center;
 }
-#tText{
+#top-text{
     color: rgb(216, 226, 231);
     margin: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 25px;
+    white-space: nowrap;
 }
-.tMenu-item{
+.top-item{
     margin: 10px;
+}
+#nav-symbol{
+    display: none;
+}
+#drop-menu{
+    background-color: rgba(78, 85, 87, 0.9);
+    box-shadow: 0px 0px 3px rgb(48, 52, 54) inset;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 39.5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    cursor: pointer;
+    text-align: center;
+
+    display: none;
+}
+/* Swap top-items with nav-symbol when the screen is less that 400px wide */
+@media screen and (max-width: 400px){
+    #top-menu{display: none;}
+    #drop-menu{display: flex;}
+    #nav-symbol{display: block;}
+    #top-bar{flex-wrap: nowrap;}
+    #top-text{overflow: hidden;}
+}
+/* Rearange the top bar when the screen is too small */
+@media screen and (max-width: 700px){
+    #top-menu{justify-content: center;}
 }
 #main{
     width: 100%;
@@ -113,4 +158,62 @@ small{
     background-size: 120vmax 100vmax;
     background-image: url("../media/profile-picture.jpg");
     background-repeat: no-repeat;
+}
+.modal{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    background: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.6),
+                                       rgba(0, 0, 0, 0.6) 4px,
+                                       rgba(0, 0, 0, 0.7) 4px,
+                                       rgba(0, 0, 0, 0.7) 8px);
+}
+.modal-window{
+    margin: 15% auto;
+    width: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: rgb(25, 151, 214);
+    background-color: rgba(78, 85, 87, 0.9);
+    box-shadow: 0px 0px 3px rgb(48, 52, 54) inset;
+    color: rgb(216, 226, 231);
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea{
+    background-color: rgb(43, 47, 48);
+    border-color: rgb(25, 151, 214);
+    border-style: solid;
+    border-radius: 4px;
+}
+#sendBtn{
+    margin: 10px 0px;
+    padding: 5px 10px;
+    background-color: rgb(25, 151, 214);
+}
+#cancelBtn{
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    right: 0px;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(25, 151, 214);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    background-color: rgb(10, 56, 80);
+    box-shadow: 0px 0px 5px rgb(25, 151, 214);
 }

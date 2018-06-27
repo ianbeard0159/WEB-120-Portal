@@ -21,19 +21,48 @@
         <script src="../javascript/web-portal.js"></script>
     </head>
     <body>
-        <div id = "top-bar">
-            <h1 id = "tText">WEB120 Portal Website</h1>
-            <div id = "tMenu">
-                <p class = "tMenu-item" id = "nig">BIG</p>
-                <p>-</p>
-                <p class = "tMenu-item" id = "aia">AIA</p>
-                <p>-</p>
-                <p class = "tMenu-item" id = "flow">Flowchart</p>
-                <p>-</p>
-                <p class = "tMenu-item" id = "final">Final Project</p>
-                <p>-</p>
-                <p class = "tMenu-item" id = "contact">Contact Me</p>
+        <!-- Popup Windows -->
+        <div class = "modal">
+            <div class = "modal-window" id = "contact-window">
+                <div class = "button" id = "cancelBtn">
+                    <span id = "cancelBtn" class="glyphicon glyphicon-remove"></span>
+                </div>
+                <h2>Contact Me</h2>
+                 <form id = "contact-form">
+                     Name:<br>
+                     <input type = "text" name = "name"><br>
+                     E-Mail:<br>
+                     <input type = "text" name = "email"><br>
+                     Comments:<br>
+                     <textarea rows = "5" cols = "19" name = "comment"></textarea><br>
+                     <input class = "button" type = "submit" value = "Send" id = "sendBtn">
+                     
+                 </form>
             </div>
+        </div>
+        <div id = "top-bar">
+            <h1 id = "top-text">WEB120 Portal Website</h1>
+            <div id = "top-menu">
+                <a class = "top-item" id = "nig">BIG</a>
+                <p>-</p>
+                <a class = "top-item" id = "aia">AIA</a>
+                <p>-</p>
+                <a class = "top-item" id = "flow">Flowchart</a>
+                <p>-</p>
+                <a class = "top-item" id = "final">Final Project</a>
+                <p>-</p>
+                <a class = "top-item" id = "contact">Contact Me</a>
+            </div>
+            <a id = "nav-symbol">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </a>
+        </div>
+        <div id = "drop-menu">
+            <a class = "top-item" id = "nig">BIG</a>
+            <a class = "top-item" id = "aia">AIA</a>
+            <a class = "top-item" id = "flow">Flowchart</a>
+            <a class = "top-item" id = "final">Final Project</a>
+            <a class = "top-item" id = "contact">Contact Me</a>
         </div>
         <div id = "main">
             <div class = "picture-box" id = "profile-picture">
