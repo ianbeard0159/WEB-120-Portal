@@ -83,18 +83,6 @@ small{
 
     display: none;
 }
-/* Swap top-items with nav-symbol when the screen is less that 400px wide */
-@media screen and (max-width: 400px){
-    #top-menu{display: none;}
-    #drop-menu{display: flex;}
-    #nav-symbol{display: block;}
-    #top-bar{flex-wrap: nowrap;}
-    #top-text{overflow: hidden;}
-}
-/* Rearange the top bar when the screen is too small */
-@media screen and (max-width: 700px){
-    #top-menu{justify-content: center;}
-}
 #main{
     width: 100%;
     flex-grow: 1;
@@ -216,4 +204,17 @@ input, textarea{
 .button:hover{
     background-color: rgb(10, 56, 80);
     box-shadow: 0px 0px 5px rgb(25, 151, 214);
+}
+/* Swap top-items with nav-symbol when the screen is less that 400px wide */
+@media screen and (max-width: 400px){
+    #top-menu{display: none;}
+    #drop-menu{display: flex;}
+    #nav-symbol{display: block;}
+    #top-bar{flex-wrap: nowrap;}
+    #top-text{overflow: hidden;}
+    .pic-text{width: 100%;}
+}
+/* Rearange the top bar when the screen is too small */
+@media screen and (max-width: 700px){
+    #top-menu{justify-content: center;}
 }
