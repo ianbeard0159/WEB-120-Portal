@@ -16,9 +16,9 @@
         <!-- Bootstrap-JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!-- CSS File -->
-        <link rel="stylesheet" href="../css/web-portal.css">
+        <link rel="stylesheet" href="static/css/web-portal.css">
         <!-- JavaScript File -->
-        <script src="../javascript/web-portal.js"></script>
+        <script src="static/javascript/web-portal.js"></script>
     </head>
     <body>
         <!-- Popup Windows -->
@@ -88,4 +88,4 @@
             </small>
         </div>
     </body>
-</html>
+</html> 
