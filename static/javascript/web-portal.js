@@ -23,7 +23,11 @@ $(document).ready(function(){
     $("#nav-symbol").click(function(){
         $("#drop-menu").toggle();
     });
-    $("body").on("click", "#contact",(function(){
+    $("body").on("click", "#top-contact",(function(){
+        $("#drop-menu").hide();
+        $(".modal").show();
+    }));
+    $("body").on("click", "#drop-contact",(function(){
         $("#drop-menu").hide();
         $(".modal").show();
     }));

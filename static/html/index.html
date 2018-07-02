@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>WEB-120 Portal</title>
-
         <meta charset="utf-8" />
+        <title></title>
+    
         <!-- Set page width and initial zoom to work with 
             whatever device is being used -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <!-- jQuerry -->
+        <!-- Bootstrap-CSS -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Bootstrap-jQuerry -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap-JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <!-- CSS File -->
-        <link rel="stylesheet" href="static/css/web-portal.css">
+        <link rel="stylesheet" href="../css/web-portal.css">
         <!-- JavaScript File -->
-        <script src="static/javascript/web-portal.js"></script>
+        <script src="../javascript/web-portal.js"></script>
     </head>
     <body>
         <!-- Popup Windows -->
@@ -40,26 +42,26 @@
         <div id = "top-bar">
             <h1 id = "top-text">WEB120 Portal Website</h1>
             <div id = "top-menu">
-                <a class = "top-item" id = "top-big" href = "big/index.php">BIG</a>
+                <a class = "top-item" id = "nig">BIG</a>
                 <p>-</p>
-                <a class = "top-item" id = "top-aia" href = "aia.php">AIA</a>
+                <a class = "top-item" id = "aia">AIA</a>
                 <p>-</p>
-                <a class = "top-item" id = "top-flow" href = "flowchart.php">Flowchart</a>
+                <a class = "top-item" id = "flow">Flowchart</a>
                 <p>-</p>
-                <a class = "top-item" id = "top-final" href = "fp/index.php">Final Project</a>
+                <a class = "top-item" id = "final">Final Project</a>
                 <p>-</p>
-                <a class = "top-item" id = "top-contact">Contact Me</a>
+                <a class = "top-item" id = "contact">Contact Me</a>
             </div>
             <a id = "nav-symbol">
-                <i class="fa fa-bars"></i>
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
             </a>
         </div>
         <div id = "drop-menu">
-            <a class = "top-item" id = "drop-big">BIG</a>
-            <a class = "top-item" id = "drop-aia">AIA</a>
-            <a class = "top-item" id = "drop-flow">Flowchart</a>
-            <a class = "top-item" id = "drop-final">Final Project</a>
-            <a class = "top-item" id = "drop-contact">Contact Me</a>
+            <a class = "top-item" id = "nig">BIG</a>
+            <a class = "top-item" id = "aia">AIA</a>
+            <a class = "top-item" id = "flow">Flowchart</a>
+            <a class = "top-item" id = "final">Final Project</a>
+            <a class = "top-item" id = "contact">Contact Me</a>
         </div>
         <div id = "main">
             <div class = "picture-box" id = "profile-picture">
@@ -85,4 +87,4 @@
             </small>
         </div>
     </body>
-</html> 
+</html>
