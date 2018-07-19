@@ -10,20 +10,8 @@
     <body>
         <!-- Popup Windows -->
         <div class = "modal">
-            <div class = "modal-window" id = "contact-window">
-                <div class = "button" id = "cancelBtn">X</div>
-                <h2>Contact Me</h2>
-                 <form id = "contact-form">
-                     Name:<br>
-                     <input type = "text" name = "name"><br>
-                     E-Mail:<br>
-                     <input type = "text" name = "email"><br>
-                     Comments:<br>
-                     <textarea rows = "5" cols = "19" name = "comment"></textarea><br>
-                     <input class = "button" type = "submit" value = "Send" id = "sendBtn">
-                     
-                 </form>
-            </div>
+            <?php include "includes/simple.php";?>
+            <p class="clear-recaptcha"></p>
         </div>
         <?php include 'static/html/nav-bar.php' ?>
         <div id = "main">
