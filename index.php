@@ -1,19 +1,19 @@
 
 <!-- PHP Config File -->
-<?php include 'portal-config.php' ?>
+<?php include 'resources/portal-config.php' ?>
 
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <?php include 'static/html/header.php' ?>
+        <?php include 'resources/templates/header.php' ?>
     </head>
     <body>
         <!-- Popup Windows -->
         <div class = "modal">
-            <?php include "includes/simple.php";?>
+            <?php include "resources/libraries/reCaptcha/includes/simple.php";?>
             <p class="clear-recaptcha"></p>
         </div>
-        <?php include 'static/html/nav-bar.php' ?>
+        <?php include 'resources/templates/nav-bar.php' ?>
         <div id = "main">
             <div class = "picture-box" id = "profile-picture">
                 <div class = "pic-cover">
@@ -26,6 +26,6 @@
             <div class = "text-box"></div>
             
         </div>
-        <?php include 'static/html/footer.php' ?>
+        <?php include 'resources/templates/footer.php' ?>
     </body>
 </html> 

@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- CSS File -->
-<link rel="stylesheet" href="static/css/web-portal.css">
+<link rel="stylesheet" href="public-html/css/web-portal.css">
 <!-- JavaScript File -->
-<script src="static/javascript/web-portal.js"></script>
+<script src="public-html/javascript/web-portal.js"></script>
 
 <title><?=$title?></title>

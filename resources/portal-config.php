@@ -12,7 +12,7 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
 //echo THIS_PAGE;
 
-//die;
+//die; 
 
 
 switch(THIS_PAGE){
