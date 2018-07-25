@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class = "text-box"></div>
-            
+            <!-- change -->
         </div>
         <?php include 'resources/templates/footer.php' ?>
     </body>
