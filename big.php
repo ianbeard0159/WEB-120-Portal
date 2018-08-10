@@ -30,12 +30,12 @@
                 </div>
                 <div id="big-rightColumn">
                     <div id="big-nav">
-                        <h2>BIG Navigation</h2>
-                        <p class="big-nav-item" id="big1">1. Responsive vs Mobile</p>
-                        <p class="big-nav-item" id="big2">2.</p>
-                        <p class="big-nav-item" id="big3">3. Flexboxes</p>
-                        <p class="big-nav-item" id="big4">4.</p>
-                        <p class="big-nav-item" id="big5">5.<p>
+                        <h2 class="big-text">BIG Navigation</h2>
+                        <div class="big-nav-item" id="big1">1<p class="big-text">. Responsive vs Mobile<p></div>
+                        <div class="big-nav-item" id="big2">2<p class="big-text">.</p></div>
+                        <div class="big-nav-item" id="big3">3<p class="big-text">. Flexboxes</p></div>
+                        <div class="big-nav-item" id="big4">4<p class="big-text">.</p></div>
+                        <div class="big-nav-item" id="big5">5<p class="big-text">.<p></div>
                     </div>
                 </div>
             </div>
