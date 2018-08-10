@@ -4,15 +4,9 @@
 
 <!DOCTYPE html>
 <html lang = "en">
-    <head>
-        <?php include 'resources/templates/header.php' ?>
-    </head>
+    <?php include 'resources/templates/header.php' ?>
     <body>
-        <!-- Popup Windows -->
-        <div class = "modal">
-            <?php include "resources/libraries/reCaptcha/includes/simple.php";?>
-            <p class="clear-recaptcha"></p>
-        </div>
+        <?php include 'resources/templates/modal.php' ?>
         <?php include 'resources/templates/nav-bar.php' ?>
         <div id = "main">
             <div class = "picture-box" id = "profile-picture">

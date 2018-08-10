@@ -23,10 +23,22 @@ switch(THIS_PAGE){
         $PageID = 'Welcome';
     break;
     
-    case 'contactme.php':
-        $title = "WEB120 Contact Page";
+    case 'big.php':
+        $title = "WEB120 Big Page";
         $logo = 'fa-pencil-square-o';
-        $PageID = 'Contact';
+        $PageID = 'BIG';
+    break;
+    
+    case 'aia.php':
+        $title = "WEB120 AIA Page";
+        $logo = 'fa-pencil-square-o';
+        $PageID = 'AIA';
+    break;
+
+    case 'flowchart.php':
+        $title = "WEB120 Flowchart Page";
+        $logo = 'fa-pencil-square-o';
+        $PageID = 'Flowchart';
     break;
 
     default:
